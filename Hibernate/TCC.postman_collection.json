@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "903e75ac-580e-47a7-97e1-727b6b3627ff",
+		"name": "TCC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28278994"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empNo\": 11,\r\n    \"birthDate\": \"1999-11-04\",\r\n    \"firstName\": \"Teste\",\r\n    \"gLastName\": \"Gomes\",\r\n    \"gender\": \"M\",\r\n    \"hireDate\": \"1999-11-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/insertAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"insertAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update first name",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Changed_Name",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/15000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"15000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By First Name",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "name",
+								"value": "Changed_Name",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/10010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"10010"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees On Department",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "department",
+								"value": "d004",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/employeesOnDepartment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeesOnDepartment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees With Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "name",
+								"value": "Ma",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/employeesWithName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeesWithName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees On Department And Greater Than",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "department",
+								"value": "d002",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/employeesOnDepartmentAndGreaterThan/15000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeesOnDepartmentAndGreaterThan",
+								"15000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees Greater Than",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employeesGreaterThan/15000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeesGreaterThan",
+								"15000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deptNo\":\"6\",\r\n    \"deptName\": \"TESTE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/departments/insertAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"departments",
+								"insertAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DeptEmp",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empNo\": 10,\r\n    \"deptNo\": \"6\",\r\n    \"fromDate\": \"1999-11-04\",\r\n    \"toDate\": \"1999-11-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/deptEmp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deptEmp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/deptEmp/insertAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deptEmp",
+								"insertAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
