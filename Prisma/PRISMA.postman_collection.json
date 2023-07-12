@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "2b8199ae-d637-49f7-9624-9e6b14b95db1",
+		"name": "PRISMA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28278994"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emp_no\": 11,\r\n    \"birth_date\": \"1999-11-04\",\r\n    \"first_name\": \"Teste\",\r\n    \"last_name\": \"Gomes\",\r\n    \"gender\": \"M\",\r\n    \"hire_date\": \"1999-11-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "Insert All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/employees/insertAll"
+					},
+					"response": []
+				},
+				{
+					"name": "Update first name",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Changed_Name\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/employees/15000"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By First Name",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "name",
+								"value": "Changed_Name",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/employees/17869"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees On Department",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "department",
+								"value": "d002",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/employeesOnDepartment"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees With Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "name",
+								"value": "Ma",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/employeesWithName"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees On Department And Greater Than",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "department",
+								"value": "d002",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/employeesOnDepartmentAndGreaterThan/15000"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees Greater Than",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/employeesGreaterThan/15000"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dept_no\":\"6\",\r\n    \"dept_name\": \"TESTE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/departments"
+					},
+					"response": []
+				},
+				{
+					"name": "Insert All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/departments/insertAll"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DeptEmp",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emp_no\": 11,\r\n    \"dept_no\": \"6\",\r\n    \"from_date\": \"1999-11-04\",\r\n    \"to_date\": \"1999-11-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/deptEmp"
+					},
+					"response": []
+				},
+				{
+					"name": "Insert All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/deptEmp/insertAll"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
