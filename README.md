@@ -18,7 +18,6 @@ O repositório está organizado da seguinte forma:
 - `Hibernate/`: Esta pasta contém os códigos-fonte utilizados para realizar os testes de eficiência do ORM Hibernate, juntamente, contém a colletion do postman utilizada.
 - `data/`: Aqui você encontrará os arquivos de dados utilizados nos testes, como scripts de criação de banco de dados e dados de exemplo.
 - `results/`: Nesta pasta estão os resultados obtidos a partir das análises comparativas, incluindo gráficos e tabelas que apresentam as métricas de desempenho.
-- `docs/`: Contém a documentação relacionada ao projeto, incluindo relatórios do TCC e outros documentos relevantes.
 - `README.md` (este arquivo): Documentação geral do repositório, fornecendo informações sobre o projeto, sua motivação e organização.
 
 ## Como Contribuir
