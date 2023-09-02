@@ -20,8 +20,8 @@ Os seguintes parâmetros foram utilizados para a análise dos testes:
 Nos gráficos presentes, o parâmetro **Q1** se encontra omitido, o mesmo existe no texto de TCC, porém com implementação direta sem se utilizar da arquitetura web, como nosso comporativo, tinha como base a comparação de ORMs no desenvolvimeto web, acabou-se por ser retirado o parâmetro **Q1**, uma vez que os dados já existiam na base, e em um sistema de CRUD acabamos por armazenar geralmente 1 dado por vez, ao invés de 10000 dados de uma vez.
 ## Link Interativos
 
-1. [Gráfico para 10 execuções de cada parâmetro dos testes](https://docs.google.com/spreadsheets/u/3/d/e/2PACX-1vTwg5r0bA2wdvBppH4Euz-ldT43SCMTL7oVlQ7q5uwIYp-C49Hl26XUr4UiiBmsIJ76r3OxM7hgTeue/pubchart?oid=1584413572&format=interactive)
-2. [Gráfico para 1000 execuções de cada parâmetro dos testes](https://docs.google.com/spreadsheets/d/e/2PACX-1vTwg5r0bA2wdvBppH4Euz-ldT43SCMTL7oVlQ7q5uwIYp-C49Hl26XUr4UiiBmsIJ76r3OxM7hgTeue/pubchart?oid=1621751828&format=interactive)
+1. [Gráfico para 10 execuções de cada parâmetro dos testes](https://docs.google.com/spreadsheets/d/e/2PACX-1vTwg5r0bA2wdvBppH4Euz-ldT43SCMTL7oVlQ7q5uwIYp-C49Hl26XUr4UiiBmsIJ76r3OxM7hgTeue/pubchart?oid=444939502&format=interactive)
+2. [Gráfico para 1000 execuções de cada parâmetro dos testes](https://docs.google.com/spreadsheets/d/e/2PACX-1vTwg5r0bA2wdvBppH4Euz-ldT43SCMTL7oVlQ7q5uwIYp-C49Hl26XUr4UiiBmsIJ76r3OxM7hgTeue/pubchart?oid=1176430176&format=interactive)
 3. [Testes completos](https://docs.google.com/spreadsheets/d/e/2PACX-1vTwg5r0bA2wdvBppH4Euz-ldT43SCMTL7oVlQ7q5uwIYp-C49Hl26XUr4UiiBmsIJ76r3OxM7hgTeue/pubhtml)
 ## Atenção
 
